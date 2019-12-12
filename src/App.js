@@ -19,8 +19,8 @@ function App() {
     <>
       <Query query={getAllArticles}>
         {({ loading, error, data }) => {
-          if (loading) return <p>Good things take time....</p>
-          if (error) return <p>Something went wrong...</p>
+          if (loading) return <p>Relax, it's worth the wait...</p>
+          if (error) return <p>Looks like we've got a problem...</p>
           return (
             <div className="container">
               <h1>Articles</h1>
