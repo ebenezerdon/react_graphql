@@ -23,6 +23,7 @@ function App() {
           if (error) return <p>Something went wrong...</p>
           return (
             <div className="container">
+              <h1>Articles</h1>
               <div className="row">
                 {data.articles.map(article => (
                   <div className="col-sm">
