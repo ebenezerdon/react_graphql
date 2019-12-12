@@ -1,7 +1,6 @@
 import React from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import logo from './logo.svg';
 import './App.css';
 
 const getAllArticles = gql`{
@@ -23,10 +22,6 @@ function App() {
         {({ loading, error, data }) => {
           if (loading) return <p>Good things take time....</p>
           if (error) return <p>Something went wrong...</p>
-          console.log('=====================')
-          console.log(data)
-          console.log('=====================')
-
           return <div className="row"><ul>{data.articles.map(article => <ol>{article.title}</ol>)}</ul></div>
         }}
       </Query>
