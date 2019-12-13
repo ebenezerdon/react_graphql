@@ -7,7 +7,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 const client = new ApolloClient({
-  uri: 'http://awesome-node-graphql.herokuapp.com/graphql'
+  uri: 'wss://awesome-node-graphql.herokuapp.com/graphql'
 })
 
 ReactDOM.render(
