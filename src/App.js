@@ -14,7 +14,7 @@ const getAllArticles = gql`{
   }
 }`
 
-function App() {
+const App = () => {
   return (
     <>
       <Query query={getAllArticles}>
