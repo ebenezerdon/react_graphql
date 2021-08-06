@@ -1,0 +1,12 @@
+query articles {
+  articles {
+    title
+    description
+    body
+    author {
+      bio
+      country
+      name
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+{
+  "name": "Remote Schema",
+  "schemaPath": "remote-schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "My GraphQL Endpoint": {
+        "url": "https://awesome-node-graphql.herokuapp.com/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": true
+      }
+    }
+  }
+}
