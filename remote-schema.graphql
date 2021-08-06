@@ -1,0 +1,35 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+}
+
+type Article {
+  author: Author
+  bio: String
+  body: String
+  category: String
+  coverImageUrl: String
+  createdOn: String
+  description: String
+  firstName: String
+  imageUrl: String
+  lastName: String
+  modifiedOn: String
+  readTime: Int
+  slug: String
+  title: String
+}
+
+type Author {
+  bio: String
+  country: String
+  name: String
+  username: String
+}
+
+type Query {
+  article(slug: String): Article
+  articles: [Article]
+  author(username: String): Author
+}
